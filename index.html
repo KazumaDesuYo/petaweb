@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#23252a] w-screen h-screen overflow-x-hidden">
+    <!-- Title -->
+    <section>
+      <div
+        class="text-neutral-50 flex flex-col items-center justify-center h-screen absolute z-20 w-screen"
+      >
+        <div class="w-auto m-0 text-center">
+          <div class="h-12 overflow-hidden">
+            <h1 class="text-5xl font-bold pb-2 reveal">Taiwan</h1>
+          </div>
+          <div class="h-10 overflow-hidden">
+            <p class="text-2xl reveal">The heart of asia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel -->
+    <div class="mx-auto">
+      <div id="default-carousel" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="overflow-hidden relative h-screen z-10 shadow-lg">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="images/taiwan1.jpg"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 brightness-50"
+              alt="..."
+            />
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="images/taiwan2.jpg"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 brightness-50"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="images/taiwan3.jpg"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 brightness-50"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="flex absolute top-0 left-0 z-20 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="hidden">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="flex absolute top-0 right-0 z-20 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="hidden">Next</span>
+          </span>
+        </button>
+      </div>
+
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    </div>
+
+    <!-- Introduction -->
+    <div class="flex h-screen p-40 justify-center items-center layer1">
+      <div class="flex space-x-80">
+        <div class="w-[600px]">
+          <h1 class="text-3xl font-bold text-white revealscroll mb-5">
+            Introduction
+          </h1>
+          <p class="text-3xl text-white revealscroll flex-nowrap">
+            Taiwan, officially the Republic of China, is a country in East Asia.
+            It is located at the junction of the East and South China Seas in
+            the northwestern Pacific Ocean, with the People's Republic of China
+            to the northwest, Japan to the northeast, and the Philippines to the
+            south.
+          </p>
+        </div>
+        <div class="">
+          <div class="revealscroll">
+            <img src="images/country.jpg" class="shadow-xl" alt="country" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flag -->
+    <div class="flex h-screen p-40 justify-center items-center layer2">
+      <div class="flex space-x-80">
+        <div>
+          <img
+            src="images/taiwan-flag.jpg"
+            class="revealscroll shadow-xl"
+            alt="flag"
+          />
+        </div>
+        <div class="w-[600px] text-right">
+          <h1 class="text-3xl font-bold text-white revealscroll mb-5">
+            The Flag Of Taiwan
+          </h1>
+          <p class="text-3xl text-white revealscroll flex-nowrap">
+            The flag of Taiwan is referred to as the “blue sky, white sun,
+            wholly red earth.” The white color of the sun symbolizes equality
+            and democracy, whereas the blue symbolizes liberty and nationalism.
+            The three colors (red, white, and blue) represent the three core
+            principles of the country.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Capital -->
+    <div class="flex h-screen p-40 justify-center items-center layer3">
+      <div class="flex space-x-80">
+        <div class="w-[600px]">
+          <h1 class="text-3xl font-bold text-white revealscroll mb-5">
+            Taipei
+          </h1>
+          <p class="text-3xl text-white revealscroll flex-nowrap">
+            The capital, Taipei, forms along with New Taipei City and Keelung
+            the largest metropolitan area. With around 23.9 million inhabitants,
+            Taiwan is among the most densely populated countries.
+          </p>
+        </div>
+        <div class="">
+          <div class="revealscroll">
+            <img src="images/Taipei101.jpg" class="shadow-xl" alt="country" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- History -->
+    <div class="flex flex-col h-screen p-40 layer1">
+      <div class="h-14 overflow-hidden text-center mb-8">
+        <h1 class="revealscroll text-5xl text-white font-bold">History</h1>
+      </div>
+      <div class="text-center">
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">
+            Taiwan's history can be divided into five periods:
+          </p>
+        </div>
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">Dutch Rule: 1624–1662</p>
+        </div>
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">
+            The Kingdom of Tungning: 1661–1683
+          </p>
+        </div>
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">
+            Qing Dynasty Rule: 1683–1895
+          </p>
+        </div>
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">
+            Japanese Rule: 1895–1945
+          </p>
+        </div>
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">
+            Republic of China Rule: 1945–present
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col h-screen p-40 layer2">
+      <div class="text-center">
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">
+            The ROC was founded in 1912 in China. At that time, Taiwan was under
+          </p>
+        </div>
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">
+            Japanese colonial rule as a result of the 1895 Treaty of
+            Shimonoseki, by
+          </p>
+        </div>
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">
+            which the Qing ceded Taiwan to Japan. The ROC government began
+          </p>
+        </div>
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">
+            exercising jurisdiction over Taiwan in 1945 after Japan surrendered
+            at
+          </p>
+        </div>
+        <div class="h-14 overflow-hidden">
+          <p class="revealscroll text-5xl text-white">
+            the end of World War II.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food -->
+    <div class="flex h-screen p-40 justify-center items-center layer3">
+      <div class="flex space-x-80">
+        <div class="w-[600px]">
+          <h1 class="text-3xl font-bold text-white revealscroll mb-5">Food</h1>
+          <h1 class="text-3xl font-bold text-white revealscroll mb-5">
+            Beef Noodle Soup
+          </h1>
+          <p class="text-3xl text-white revealscroll w-[400px]">
+            Beef Noodle Soup is so popular in Taipei that it has a festival in
+            its honour every year. As a result, the range of places selling this
+            tasty dish is very broad, with each claiming to be the best.
+          </p>
+        </div>
+        <div class="">
+          <div class="revealscroll">
+            <img src="images/Beef_noodle.jpg" class="shadow-xl" alt="Food" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex h-screen p-40 justify-center items-center layer1">
+      <div class="flex space-x-80">
+        <div>
+          <img
+            src="images/Xiao_Long_Bao.jpg"
+            class="revealscroll shadow-xl"
+            alt="Xiao Long Bao"
+          />
+        </div>
+        <div class="w-[600px] text-right">
+          <h1 class="text-3xl font-bold text-white revealscroll mb-5">
+            Xiao Long Bao
+          </h1>
+          <p class="text-3xl text-white revealscroll w-[400px]">
+            The signature dish of the renowned Din Tai Fung restaurant chain,
+            these bite-sized dumplings have paper-thin wrappings around tender
+            pork meatballs in a rich, hot broth. Despite its simplicity, it is
+            extremely popular with locals and tourists alike for its great
+            flavour and has carried the Taipei-based restaurant to international
+            acclaim.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tourist Spot -->
+    <div class="flex h-screen p-40 justify-center items-center layer2">
+      <div class="flex space-x-80">
+        <iframe
+          width="960"
+          height="540"
+          src="https://www.youtube.com/embed/watch?v=cdgLDZSeYUwcontrols=0"
+        >
+        </iframe>
+      </div>
+    </div>
+    <!-- Fact -->
+    <div class="flex h-screen p-40 justify-center items-center layer1">
+      <div class="flex space-x-40">
+        <div class="w-[600px] text-center">
+          <h1 class="text-3xl font-bold text-white revealscroll mb-5">
+            Did You Know?
+          </h1>
+          <p class="text-3xl text-white revealscroll flex-nowrap">
+            Taiwan is the world’s top producer of semiconductors (65%) and
+            advanced computer chips (95%). These are crucial items in
+            smartphones, computers, cars, and various other digital devices.<br /><br />
+            One Taiwanese company alone, TSMC, handles a staggering 55% of
+            global chip fabrication contracts. These chips are the most traded
+            product in the world, ahead of oil. According to TIME, this makes
+            Taiwan the center of the world.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="animation.js"></script>
+  </body>
+</html>

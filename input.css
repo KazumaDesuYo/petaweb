@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Diphylleia', serif;
+}
+.revealscroll {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+.revealscroll.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+/* one time reveal */
+.reveal  {
+    animation: reveal 1.5s ease ;
+  }
+
+@keyframes reveal {
+    0% {
+        transform: translateY(150px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+
+  .layer1 {
+    aspect-ratio: 960/540;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./svg/stacked-waves-haikei.svg");
+  }
+
+  .layer2 {
+    aspect-ratio: 960/540;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./svg/stacked-waves-haikei2.svg");
+  }
+
+  .layer3 {
+    aspect-ratio: 960/540;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./svg/stacked-waves-haikei3.svg");
+  }
